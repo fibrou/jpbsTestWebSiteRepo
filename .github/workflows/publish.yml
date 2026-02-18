@@ -7,11 +7,14 @@ name: Quarto Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v2
       - uses: quarto-dev/quarto-actions/setup@v2
-      - uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          render: true
-```
