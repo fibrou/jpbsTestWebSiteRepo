@@ -1,0 +1,23 @@
+---
+title: "Git Workflow for Research"
+date: "2026-02-17"
+---
+
+# Git Workflow for Research
+
+This is a draft blog post about using Git to maintain versions of academic work. 
+
+In this post, I'll explore:
+
+- Why version control matters for research
+- How to use branches for experimentation
+- Committing as a research practice
+
+[This is still being written - more content coming soon]
+```
+
+Create that file, save it, and then **stage it** (click the "+" next to it in the Source Control panel).
+
+Once you've staged it, **write a commit message** and commit it. The message could be:
+```
+Draft: Blog post on Git workflow for research
