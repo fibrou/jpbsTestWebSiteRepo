@@ -1,0 +1,23 @@
+on:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: true
+```
+
+---
+
+Once you've created that file in Positron, **commit it** with a message like:
+```
+Add GitHub Actions workflow for Quarto deployment
