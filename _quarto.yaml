@@ -3,6 +3,7 @@ project:
 
 website:
   site-url: "https://fibrou.github.io/jpbsTestWebSiteRepo"
+  baseurl: "/jpbsTestWebSiteRepo"
   title: "My Academic Website"
   navbar:
     left:
