@@ -4,32 +4,21 @@ on:
 
 name: Quarto Publish
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
       - uses: quarto-dev/quarto-actions/setup@v2
-      - run: quarto render
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+      
+      - name: Render Quarto project
+        run: quarto render
+      
+      - name: Commit and push rendered site
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Render site" && git push)
           
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
