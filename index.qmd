@@ -5,3 +5,4 @@ title: "Welcome"
 # Welcome to My Academic Website
 
 This is my academic home. You'll find my CV, working papers, and thoughts on research here.
+
