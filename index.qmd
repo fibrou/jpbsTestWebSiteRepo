@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Welcome - Finance is COOL!"
 ---
 
 # Welcome to My Academic Website
