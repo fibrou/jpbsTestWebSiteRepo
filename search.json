@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "CV\n[Your CV content will go here]"
+  },
+  {
+    "objectID": "blog-post-draft.html",
+    "href": "blog-post-draft.html",
+    "title": "Git Workflow for Research",
+    "section": "",
+    "text": "Git Workflow for Research\nThis is a draft blog post about using Git to maintain versions of academic work.\nIn this post, I’ll explore:\n\nWhy version control matters for research\nHow to use branches for experimentation\nCommitting as a research practice\n\n[This is still being written - more content coming soon]\n\nCreate that file, save it, and then **stage it** (click the \"+\" next to it in the Source Control panel).\n\nOnce you've staged it, **write a commit message** and commit it. The message could be:\nDraft: Blog post on Git workflow for research"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome - Finance is COOL!",
+    "section": "",
+    "text": "Welcome to My Academic Website\nThis is my academic home. You’ll find my CV, working papers, and thoughts on research here."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog\n[Blog posts will go here]"
+  },
+  {
+    "objectID": "papers.html",
+    "href": "papers.html",
+    "title": "Working Papers",
+    "section": "",
+    "text": "Working Papers\n[List of your papers will go here]"
+  }
+]
